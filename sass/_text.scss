@@ -1,0 +1,21 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: red;
+
+@mixin ourFirstMixin {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.wrap {
+  @include ourFirstMixin;
+  .text {
+     font-size: 35px;
+  }
+}
+
+.wrap-one {
+  @include ourFirstMixin;
+  .text {
+    font-size: 50px;
+  }
+}
