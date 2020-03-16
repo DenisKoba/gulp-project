@@ -1,21 +1,13 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: red;
-
-@mixin ourFirstMixin {
-  font: 100% $font-stack;
-  color: $primary-color;
-}
+@import "common-styles";
+@import "media";
 
 .wrap {
-  @include ourFirstMixin;
-  .text {
-     font-size: 35px;
-  }
-}
 
-.wrap-one {
-  @include ourFirstMixin;
-  .text {
-    font-size: 50px;
+  &__box {
+    height: 200px;
+    width: 200px;
+    background-color: map_get($colors, red);
+
+    @include mediaBox(large);
   }
 }

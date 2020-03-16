@@ -1,0 +1,18 @@
+@import "common-styles";
+
+@mixin mediaBox($name) {
+  @if $name == small {
+    @media screen and (max-width: 400px) { @content };
+  }
+
+  @else if $name == medium {
+    @media screen and (max-width: 650px) { @content };
+  }
+
+  @else if $name == large {
+    @media screen and (max-width: 1000px) {
+      @include boxMediaSizes(map_get($colors, orange), 2, 15deg)
+    };
+  }
+}
+

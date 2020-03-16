@@ -1,0 +1,16 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: red;
+$colors: ( red: red, blue: blue, green: green, orange: orange );
+
+@function scaleBox($scale) {
+  @return scale($scale)
+}
+
+@function rotateBox($deg) {
+  @return rotate($deg)
+}
+
+@mixin boxMediaSizes($color, $scaleMixinValue, $degMixinValue) {
+  background-color: $color;
+  transform: scaleBox($scaleMixinValue), rotateBox($degMixinValue)
+}
