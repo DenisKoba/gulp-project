@@ -1,6 +1,10 @@
 @import "common-styles";
 @import "media";
 
+.selected {
+  width: 20px;
+}
+
 .wrap {
 
   &__box {
@@ -8,6 +12,6 @@
     width: 200px;
     background-color: map_get($colors, red);
 
-    @include mediaBox(large);
+    @extend .selected;
   }
 }

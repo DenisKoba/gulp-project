@@ -1,0 +1,19 @@
+.header__menu {
+  display: flex;
+  list-style: none;
+}
+
+.header__menu-item {
+  margin: 0 0 0 10px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #202124;
+  opacity: .8;
+
+  &_activa {
+    color: #202124;;
+  }
+}

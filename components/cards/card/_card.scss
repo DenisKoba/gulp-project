@@ -1,0 +1,11 @@
+.card {
+  text-align: center;
+
+  &__sticker {
+    background-color: #F2752E;
+    padding: 5px 14px;
+    border-radius: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
